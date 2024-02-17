@@ -1,0 +1,35 @@
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-horizontal li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-horizontal ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.menu-horizontal ul li {
+    display: block;
+}
+
+.menu-horizontal li:hover > ul {
+    display: block;
+}
